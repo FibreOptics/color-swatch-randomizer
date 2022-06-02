@@ -5,3 +5,4 @@
 *.lock
 *.css
 *.scss
+plopfile.js

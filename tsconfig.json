@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": ".",
+    "target": "ESNext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -12,9 +13,23 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "noImplicitAny": false,
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@configs/*": [
+        "configs/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ]
+    },
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -29,5 +44,5 @@
   "exclude": [
     "node_modules",
     ".next",
-  ]
+  ],
 }
